@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbf-FJ-MGe" userLabel="contentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1323.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1409.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="equalSpacing" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="zPj-uS-Bet" userLabel="Logo Stack View">
                                                 <rect key="frame" x="136.5" y="24" width="141" height="47"/>
@@ -34,7 +33,7 @@
                                                     </imageView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bJK-ve-V1y">
                                                         <rect key="frame" x="71" y="0.0" width="1" height="47"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="47" id="4H0-KW-hrA"/>
                                                             <constraint firstAttribute="width" constant="1" id="qNa-jY-lFa"/>
@@ -263,8 +262,60 @@
                                                     </view>
                                                 </subviews>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6r-Tc-uaC" userLabel="First Button">
+                                                <rect key="frame" x="28" y="453.5" width="358" height="66"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="66" id="C6b-ps-j9S"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="£7.99">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="17" name="AvenirNext-Bold"/>
+                                                                <font key="NSOriginalFont" size="17" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" / MONTHLY">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="15" name="AvenirNext-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <buttonConfiguration key="configuration" style="gray" cornerStyle="capsule">
+                                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXx-SY-GJQ">
+                                                <rect key="frame" x="31" y="473.5" width="352" height="26"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="£7.99 ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="19" name="AvenirNext-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="/ MONTHLY">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="15" name="AvenirNext-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ0-op-8VZ" userLabel="Big Stack View">
-                                                <rect key="frame" x="31" y="486.5" width="352" height="585.5"/>
+                                                <rect key="frame" x="31" y="572.5" width="352" height="585.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mfj-9d-TXL" userLabel="1st of Big Stack View">
                                                         <rect key="frame" x="0.0" y="0.0" width="352" height="20.5"/>
@@ -547,7 +598,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="k7B-O2-E14" userLabel="Bottom Text Stack View">
-                                                <rect key="frame" x="25" y="1106" width="364" height="163"/>
+                                                <rect key="frame" x="25" y="1192" width="364" height="163"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NXTLVLPRO Subscription Terms" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sT-3e-bKk">
                                                         <rect key="frame" x="94" y="0.0" width="176" height="16.5"/>
@@ -565,7 +616,7 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsB-SN-hlJ">
-                                                <rect key="frame" x="30" y="1291" width="354" height="30.5"/>
+                                                <rect key="frame" x="30" y="1377" width="354" height="30.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="By continuing you agree to Apple’s Billing Terms and our ">
                                                         <attributes>
@@ -603,6 +654,7 @@
                                         <constraints>
                                             <constraint firstItem="zPj-uS-Bet" firstAttribute="top" secondItem="qbf-FJ-MGe" secondAttribute="top" constant="24" id="0T5-xJ-q27"/>
                                             <constraint firstAttribute="bottom" secondItem="VsB-SN-hlJ" secondAttribute="bottom" constant="2" id="0XS-Ke-S1d"/>
+                                            <constraint firstItem="hXx-SY-GJQ" firstAttribute="centerY" secondItem="V6r-Tc-uaC" secondAttribute="centerY" id="4Y6-bS-Xq2"/>
                                             <constraint firstItem="k7B-O2-E14" firstAttribute="leading" secondItem="qbf-FJ-MGe" secondAttribute="leading" constant="25" id="7Xp-C2-9IW"/>
                                             <constraint firstAttribute="trailing" secondItem="ZJ0-op-8VZ" secondAttribute="trailing" constant="31" id="DLK-w9-8re"/>
                                             <constraint firstItem="yEU-9f-doL" firstAttribute="top" secondItem="JVk-AC-a4F" secondAttribute="bottom" constant="20" id="Foa-g9-fA5"/>
@@ -610,12 +662,17 @@
                                             <constraint firstItem="k7B-O2-E14" firstAttribute="top" secondItem="ZJ0-op-8VZ" secondAttribute="bottom" constant="34" id="JGB-52-Cm6"/>
                                             <constraint firstAttribute="trailing" secondItem="VsB-SN-hlJ" secondAttribute="trailing" constant="30" id="PrX-cj-G42"/>
                                             <constraint firstItem="VsB-SN-hlJ" firstAttribute="leading" secondItem="qbf-FJ-MGe" secondAttribute="leading" constant="30" id="Qra-eM-UVc"/>
+                                            <constraint firstItem="V6r-Tc-uaC" firstAttribute="top" secondItem="yEU-9f-doL" secondAttribute="bottom" constant="20" id="VEO-yR-gY8"/>
                                             <constraint firstAttribute="trailing" secondItem="yEU-9f-doL" secondAttribute="trailing" constant="28" id="W4D-Qp-UDY"/>
+                                            <constraint firstItem="hXx-SY-GJQ" firstAttribute="leading" secondItem="qbf-FJ-MGe" secondAttribute="leading" constant="31" id="Wmi-5A-xvl"/>
                                             <constraint firstItem="yEU-9f-doL" firstAttribute="leading" secondItem="qbf-FJ-MGe" secondAttribute="leading" constant="28" id="ZMC-QW-1uf"/>
                                             <constraint firstItem="JVk-AC-a4F" firstAttribute="top" secondItem="zPj-uS-Bet" secondAttribute="bottom" constant="27" id="cda-Nz-0Gi"/>
                                             <constraint firstAttribute="trailing" secondItem="k7B-O2-E14" secondAttribute="trailing" constant="25" id="cwb-RU-5pf"/>
-                                            <constraint firstItem="ZJ0-op-8VZ" firstAttribute="top" secondItem="yEU-9f-doL" secondAttribute="bottom" constant="53" id="dob-cn-KEW"/>
+                                            <constraint firstAttribute="trailing" secondItem="hXx-SY-GJQ" secondAttribute="trailing" constant="31" id="d2y-9i-Ypb"/>
+                                            <constraint firstItem="V6r-Tc-uaC" firstAttribute="leading" secondItem="qbf-FJ-MGe" secondAttribute="leading" constant="28" id="d4d-FU-fqV"/>
+                                            <constraint firstItem="ZJ0-op-8VZ" firstAttribute="top" secondItem="V6r-Tc-uaC" secondAttribute="bottom" constant="53" id="dob-cn-KEW"/>
                                             <constraint firstItem="VsB-SN-hlJ" firstAttribute="top" secondItem="k7B-O2-E14" secondAttribute="bottom" constant="22" id="gbv-Ga-aID"/>
+                                            <constraint firstAttribute="trailing" secondItem="V6r-Tc-uaC" secondAttribute="trailing" constant="28" id="hPW-bV-Y2X"/>
                                             <constraint firstItem="JVk-AC-a4F" firstAttribute="leading" secondItem="qbf-FJ-MGe" secondAttribute="leading" constant="25" id="lYK-cy-UJ4"/>
                                             <constraint firstItem="zPj-uS-Bet" firstAttribute="centerX" secondItem="qbf-FJ-MGe" secondAttribute="centerX" id="qO6-ia-mUl"/>
                                             <constraint firstItem="ZJ0-op-8VZ" firstAttribute="leading" secondItem="qbf-FJ-MGe" secondAttribute="leading" constant="31" id="vzy-1I-tJw"/>
@@ -646,7 +703,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s5Y-Ci-pMA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7.2000000000000002" y="956.89655172413802"/>
+            <point key="canvasLocation" x="-7.2463768115942031" y="956.25"/>
         </scene>
     </scenes>
     <resources>
@@ -654,8 +711,5 @@
         <image name="CheckPro" width="27" height="19"/>
         <image name="Cross" width="19" height="19"/>
         <image name="Logo" width="28.5" height="9.5"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
